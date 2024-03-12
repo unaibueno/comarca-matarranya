@@ -1,0 +1,206 @@
+<!doctype html>
+ <html lang="es-ES"> 
+ <head>
+        <meta charset="utf-8">
+        <title>Comarca del mataraña</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="assets/css/style.css">
+       <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    </head>    
+    <body >
+        <header>
+            <div class="top-header">
+                <span style="margin-left: 20px;">Comarca del matarraña / matarranya</span>
+                <span style="margin-right: 40px;">
+                <svg style="margin-right:10px" xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+                <a href="login.php">INICIAR SESIÓN</a></span>
+
+            </div>
+            <div class="header">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="Logo oficial de la comarca del matarraña / matarranya">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="actividades.html">Actividades</a></li>
+                        <li><a href="buscador.html">Buscador</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="intro" class="dark-bg titulo-inicial titulo-inicial-buscador">
+            <div class="contenido-centrado">
+                <h1>BUSCADOR DE ACTIVIDADES</h1>
+            </div>
+        </section>
+        <section id="buscador">
+            <div class="angry-grid">
+                <div id="item-0">
+                    <div class="contenedor">
+                        <div class="rectangulo">
+                            <form action="#" method="post" class="formulario">
+                                <div class="seccion">
+                                    <label for="buscar_actividad" class="etiqueta">Buscar actividad</label>
+                                    <input type="text" id="buscar_actividad" name="buscar_actividad" placeholder="Escribe las palabras clave" class="entrada">
+                                </div>
+                                <div class="seccion">
+                                    <label for="buscar_palabras_clave" class="etiqueta">Seleccionar el pueblo </label>
+                                    <input type="text" id="buscar_palabras_clave" name="buscar_palabras_clave" placeholder="Valderrobres" class="entrada">
+                                </div>
+                                <div class="seccion">
+                                    <label  for="fechas" class="etiqueta">Fechas de inicio y fin</label>
+                                    <input id="fechas" type="date" id="fecha_inicio" class="fecha_inicio" class="entrada">
+                                    <input id="fechas" type="date" id="fecha_fin" class="fecha_fin" class="entrada">
+                                </div>
+                                <div class="seccion">
+                                    <label class="etiqueta" name="opciones" for="opciones">Opciones</label>
+                                    <input type="checkbox" id="opcion1" class="opcion" class="entrada">
+                                    <label for="opcion1" class="opcion1">Accesible</label>
+                                    <input type="checkbox" id="opcion2" class="opcion" class="entrada">
+                                    <label for="opcion2" class="opcion2">Actividad Gratuita</label>
+                                </div>
+                                <div class="seccion">
+                                    <button type="submit" class="boton">CONSULTAR</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="rectangulo">
+                        <table id="calendar">
+                            <thead>
+                                <caption></caption>
+                                <tr>
+                                    <th>Lun</th>
+                                    <th>Mar</th>
+                                    <th>Mie</th>
+                                    <th>Jue</th>
+                                    <th>Vie</th>
+                                    <th>Sab</th>
+                                    <th>Dom</th>
+                                </tr>
+                            </thead>
+                            <tbody> 
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+                <div id="item-1">
+                    <div class="contenedor">
+                    <div class="grid-container">
+                            <div class="bloque">
+                                <div class="contenido">
+                                    <img src="assets/images/actividad4.jpg" alt="Imagen 1">
+                                </div>
+                                <div class="contenido">
+                                    <span class="titulo" >Hipica en valderrobres</span>
+                                    <span class="descripcion" >Lugar: Valderrobres</span>
+
+                                </div>
+                            </div>
+                            <div class="bloque">
+                                <div class="contenido">
+                                    <img src="assets/images/actividad3.jpg" alt="Imagen 2">
+                                </div>
+                                <div class="contenido">
+                                    <span class="titulo" >Degustación de comida</span>
+                                    <span class="descripcion">Lugar: Beceite</span>
+                                </div>
+                            </div>
+                            <div class="bloque">
+                                <div class="contenido">
+                                    <img src="assets/images/actividad2.jpg" alt="Imagen 3">
+                                </div>
+                                <div class="contenido">
+                                    <span class="titulo" >Senderismo en el parrizal</span>
+                                    <span class="descripcion">Lugar: Cretas</span>
+                                </div>
+                            </div>
+                            <div class="bloque">
+                                <div class="contenido">
+                                    <img src="assets/images/Actividad1.jpg" alt="Imagen 4">
+                                </div>
+                                <div class="contenido">
+                                    <span class="titulo" >IV Carrera en cretas</span>
+                                    <span class="descripcion">Lugar: Cretas</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-bottom">
+                <p> COMARCA DEL MATARRAÑA. &copy; 2024 Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+        <script>
+                        var actual = new Date();
+                        function mostrarCalendario(year, month) {
+                            var now = new Date(year, month - 1, 1);
+                            var last = new Date(year, month, 0);
+                            var primerDiaSemana = (now.getDay() == 0) ? 7 : now.getDay();
+                            var ultimoDiaMes = last.getDate();
+                            var dia = 0;
+                            var resultado = "<tr bgcolor='silver'>";
+                            var diaActual = 0;
+                            console.log(ultimoDiaMes);
+                            var last_cell = primerDiaSemana + ultimoDiaMes;
+                            // hacemos un bucle hasta 42 
+                            // de  6 columnas y de 7 días
+                            for (var i = 1; i <= 42; i++) {
+                                if (i == primerDiaSemana) {
+                                    // determinamos en qué día empieza
+                                    dia = 1;
+                                }
+                                if (i < primerDiaSemana || i >= last_cell) {
+                                    // celda vacía
+                                    resultado += "<td>&nbsp;</td>";
+                                } else {
+                                    // mostramos el día
+                                    if (dia == actual.getDate() && month == actual.getMonth() + 1 && year == actual.getFullYear())
+                                        resultado += "<td class='hoy'>" + dia + "</td>";
+                                    else
+                                        resultado += "<td>" + dia + "</td>";
+                                    dia++;
+                                }
+                                if (i % 7 == 0) {
+                                    if (dia > ultimoDiaMes)
+                                        break;
+                                    resultado += "</tr><tr>\n";
+                                }
+                            }
+                            resultado += "</tr>";
+
+                            var meses = Array("Enero", "Febrero", "Marzo", "Abril", "Mayo",
+                                "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre",
+                                "Diciembre");
+
+                            // Calculamos el siguiente mes y año
+                            nextMonth = month + 1;
+                            nextYear = year;
+
+                            if (month + 1 > 12) {
+                                nextMonth = 1;
+                                nextYear = year + 1;
+                            }
+
+                            // Calculamos el mes y año anterior
+                            prevMonth = month - 1;
+                            prevYear = year;
+
+                            if (month - 1 < 1) {
+                                prevMonth = 12;
+                                prevYear = year - 1;
+                            }
+
+                            document.getElementById("calendar").getElementsByTagName("caption")[0].innerHTML = "<div>" + meses[month - 1] + "  " + year + "</div><div></div>";
+                            document.getElementById("calendar").getElementsByTagName("tbody")[0].innerHTML = resultado;
+                        }
+                        mostrarCalendario(actual.getFullYear(), actual.getMonth() + 1);
+                    </script>  
+    </body>
+</html>

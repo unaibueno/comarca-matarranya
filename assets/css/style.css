@@ -1,0 +1,620 @@
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('../fonts/Graphik-Font-Family/GraphikBlack.otf') format('woff2'),
+       
+}
+
+
+@font-face {
+    font-family: 'Graphik Regular';
+    src: url('../fonts/Graphik-Font-Family/GraphikRegular.otf') format('woff2'),
+       
+}
+body {
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #222222;
+    font-family: 'Inter', sans-serif;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+section{
+    background-color: white;
+
+}
+
+.dark-bg{
+    background-color: #222222;
+
+}
+
+
+
+/* TOP HEADER */
+
+.top-header {
+    font-family: 'Graphik', sans-serif;
+    background-color: #222222; /* Color de fondo del header */
+    color: #fff; /* Color del texto del header */
+    z-index: 2000; /* Z-index alto para asegurar que esté siempre arriba */
+    border-bottom: #515151 1px solid;
+    height: 17px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.top-header span{
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    font-size: 14px;
+}
+
+/* CODIGO DEL HEADER */
+
+
+.header {
+    background-color: #2D2D2D; /* Color de fondo del header */
+    color: #fff; /* Color del texto del header */
+    padding: 12px 50px; /* Espaciado interno del header */
+    position: fixed; /* Hace que el header sea fijo */
+    top: 40px; /* Se posiciona en la parte superior de la página */
+    width: calc(100% - 40px); /* Ocupa todo el ancho de la ventana menos el padding */
+    z-index: 1000; /* Z-index alto para asegurar que esté siempre arriba */
+    display: flex; /* Utiliza flexbox para alinear elementos */
+    justify-content: space-between; /* Alinea los elementos a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+    border-bottom: #393939 2px solid;
+}
+
+.logo img {
+    
+    max-height: 40px; /* Ajusta el tamaño máximo del logo */
+}
+
+nav ul {
+    list-style-type: none; /* Quita los marcadores de lista */
+    margin: 0;
+    padding: 0;
+    margin-right: 60px;
+}
+
+nav ul li {
+    display: inline; /* Los elementos de la lista se muestran en línea */
+    margin-left: 20px; /* Espacio entre elementos del menú */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Quita el margen izquierdo del primer elemento */
+}
+
+nav ul li a {
+    color: #fff; /* Color del texto del enlace */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Graphik Regular', sans-serif;
+    letter-spacing: 0.8px;
+    font-weight: bold;
+
+}
+
+
+/* CODIGO DEL FOOTER */
+.footer {
+    color: #fff;
+    padding: 0px;
+    bottom: 0; /* Se posiciona en la parte inferior de la ventana */
+    width: auto;
+    z-index: 1000; /* Z-index alto para asegurar que esté siempre arriba */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos para el título inicial */
+/* Estilos comunes para el título inicial */
+.titulo-inicial {
+    position: relative;
+    height: 300px;
+    margin-top: 70px;
+    overflow: hidden;
+}
+
+.titulo-inicial::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+}
+
+/* Estilos específicos para diferentes secciones */
+.titulo-inicial-contacto::before,
+.titulo-inicial-actividades::before,
+.titulo-inicial-inicio::before,
+.titulo-inicial-buscador::before {
+    background-image: url('../images/actividad3.jpg');
+}
+
+.titulo-inicial-actividades::before {
+    background-image: url('../images/matarraña4.webp');
+}
+
+.titulo-inicial-inicio::before {
+    background-image: url('../images/home-bg.jpg');
+}
+
+.titulo-inicial-buscador::before {
+    background-image: url('../images/matarraña5.png');
+}
+
+/* Estilos para el contenido centrado */
+.contenido-centrado {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 140px;
+}
+
+.contenido-centrado h1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Graphik', sans-serif;
+    text-shadow: 2px 2px 14px black;
+    letter-spacing: 1.8px;
+    margin-top: 0px;
+}
+
+.activities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Para centrar los bloques en la página */
+    padding: 60px 200px; /* Limita el ancho total a 1000px */
+    margin: 0 auto; /* Para centrar el contenedor en la página */
+    gap: 60px; /* Agrega un margen de 20px entre los bloques */
+    background-color: white;
+}
+
+.activity {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    height: 250px;
+
+}
+
+.image-block,
+.text-block {
+    width: 60%;
+    height: 250px;
+
+}
+
+.image-block img {
+    width: 100%;
+    height: 260px;
+    border-radius: 5px;
+    object-fit: cover;
+
+}
+
+.text-block {
+    padding: 0 40px; /* Agrega un margen interno de 20px */
+}
+
+.text-block h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-family: 'Graphik', sans-serif;
+    text-transform: uppercase;
+}
+
+.text-block p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #EEEEEE;
+    color: #222222;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    border: #C7C7C7 solid 1px;
+    
+}
+
+.btn:hover {
+    background-color: #222222;
+    color: white;
+
+}
+
+@media screen and (max-width: 768px) {
+    .activity {
+        flex-direction: column;
+    }
+
+    .image-block,
+    .text-block {
+        width: 100%;
+    }
+
+    .text-block {
+        padding: 20px; /* Ajusta el margen interno */
+    }
+}
+
+.contacto{
+    background-color: white;
+    padding-top: 30px;
+}
+
+.contacto-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto; /* Centrar el contenedor en la página */
+    background-color: white;
+    height: 500px;  
+}
+
+.contacto-container p {
+   text-align: left; 
+   width: 90%;
+   font-weight: 400;
+   font-size: 17px;
+}
+
+  
+  .contacto-izquierda,
+  .contacto-derecha {
+    width: 48%; /* Esto dejará un pequeño espacio entre los dos divs */
+  }
+ .contacto-container h2{
+    font-family: 'Graphik', sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+  
+  .form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-sizing: border-box;
+    background-color: #F5F5F5;
+}
+
+.form-textarea {
+    height: 100px;
+}
+
+.form-submit {
+    width: 100%;
+    color: black;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #F5F5F5;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+  .actividades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Para centrar los bloques en la página */
+    padding: 60px 200px; /* Limita el ancho total a 1000px */
+    margin: 0 auto; /* Para centrar el contenedor en la página */
+    gap: 120px; /* Agrega un margen de 20px entre los bloques */
+    background-color: white;
+    padding-bottom: 100px;
+}
+
+.actividad {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    height: 250px;
+}
+
+.contenedor-imagen,
+.contenedor-texto-1, .contenedor-texto-2 {
+    width: 60%;
+    height: 250px;
+}
+
+.contenedor-imagen img {
+    width: 100%;
+    height: 310px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.contenedor-texto-1 {
+    padding-left: 50px; /* Agrega un margen interno de 20px */
+}
+.contenedor-texto-2 {
+    padding-right: 50px; /* Agrega un margen interno de 20px */
+}
+.contenedor-texto-1 h2, .contenedor-texto-2 h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-family: 'Graphik', sans-serif;
+    text-transform: uppercase;
+    margin-top: 0px;
+
+}
+
+.contenedor-texto-1 p, .contenedor-texto-2 p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 15px;
+    padding-top: 13px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 6 / 2; }
+    .div2 { grid-area: 1 / 2 / 6 / 6; }
+
+    .div1 p, .div2 p{
+        line-height: 1px;
+        font-family: 'Graphik', sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-top: 10px;
+        font-size: 17px;
+
+    }
+
+    .div1 span, .div2 span{
+        line-height: 1px;
+        font-family: 'Graphik', sans-serif;
+        font-weight: 500;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+
+
+    .angry-grid {
+        display: grid; 
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        gap: 0px;
+        height: 100%;
+        padding: 10px 180px;
+     }
+       
+     #item-0 {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 6;
+        grid-column-end: 4;
+        height: 700px;
+        
+     }
+     #item-1 {
+     
+        grid-row-start: 1;
+        grid-column-start: 4;
+        height: 600px;
+     
+        grid-row-end: 6;
+        grid-column-end: 13;
+        
+     }
+    
+
+
+     .contenedor {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+      }
+      
+      .rectangulo:first-child {
+        height: 4O0px; /* Cambia la altura según tus necesidades */
+        background-color: #F2F2F2; /* Cambia el color de fondo según tus necesidades */
+        margin-bottom: 20px; /* Espacio entre los rectángulos */
+        width: 90%;
+        border-radius: 15px;
+        border: solid 1px #CECECE;
+      }
+      
+      .rectangulo:last-child {
+        height: 200px; /* Cambia la altura según tus necesidades */
+        background-color: #ECECEC; /* Cambia el color de fondo según tus necesidades */
+        margin-bottom: 20px; /* Espacio entre los rectángulos */
+        width: 80%;
+        border-radius: 15px;
+        border: solid 1px #CECECE;
+        margin-bottom: 0; /* Elimina el espacio inferior para el último rectángulo */
+        padding: 20px;
+      }
+      
+
+
+      .formulario {
+        width: 300px; /* Ancho del formulario, ajusta según necesidades */
+        margin: 25px auto; /* Centra el formulario horizontalmente */
+      }
+      
+      .seccion {
+        margin-bottom: 20px; /* Espacio entre cada sección del formulario */
+      }
+      
+      .etiqueta {
+        display: block; /* Coloca cada etiqueta en una línea separada */
+        margin-bottom: 5px; /* Espacio bajo cada etiqueta */
+        font-family: 'Graphik', sans-serif;
+        font-weight: 450;
+      }
+      
+      .entrada {
+        width: 100%; /* Los campos de entrada y el botón ocupan todo el ancho disponible */
+        padding: 13px; /* Aumenta el espaciado interno */
+        box-sizing: border-box; /* El ancho y alto incluyen el relleno y el borde */
+        border: 1px solid #ccc; /* Añade un borde para mejorar la apariencia */
+        border-radius: 10px; /* Añade esquinas redondeadas */
+        background-color: white; /* Cambia el color de fondo */
+        font-size: 14px; /* Cambia el tamaño del texto */
+      }
+     
+      
+      .entrada:focus {
+        outline: 2px solid; /* Quita el contorno al enfocar */
+      }
+
+      .fecha_inicio, .fecha_fin{
+        width: 39%;
+        border: 1px solid #ccc; /* Añade un borde para mejorar la apariencia */
+        border-radius: 10px; /* Añade esquinas redondeadas */
+        background-color: white; /* Cambia el color de fondo */
+        padding: 13px; /* Aumenta el espaciado interno */
+
+      }
+      
+      .opcion1 , .opcion2{
+        width: 50%;
+      }
+      
+      .boton {
+        border: 1px solid #ccc; /* Añade un borde para mejorar la apariencia */
+        border-radius: 10px; /* Añade esquinas redondeadas */
+        background-color: white; /* Cambia el color de fondo */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+        padding: 13px; /* Aumenta el espaciado interno */
+
+        width: 100%;
+      }
+      
+      .boton:hover {
+        background-color: #222222; /* Color de fondo al pasar sobre el botón */
+        color: white;
+      }
+      
+
+
+      #calendar { font-family:'Graphik', sans-serif;font-size:12px;
+    width: 99%; height: 80%;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    border: solid 1px #ccc;
+    border-top: none;
+
+
+
+}
+#calendar caption {text-align:center;padding:5px 10px; background-color:white;    border-radius: 10px 10px 0px 0px;
+padding: 10px;
+color:black;font-weight:500;font-size:medium;
+border: solid 1px #ccc;
+border-bottom: none;
+
+}
+#calendar caption div:nth-child(1) {float:left;}
+#calendar caption div:nth-child(2) {float:right;}
+#calendar caption div:nth-child(2) a {cursor:pointer;}
+#calendar th {background-color:white;color:#fff;width:40px; }
+#calendar td {text-align:right;padding:2px 5px;background-color:white; text-align:center; border-radius: 20px;
+}
+#calendar .hoy {background-color:rgb(255, 216, 186);}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.bloque {
+    text-align: center;
+    height: 318px;
+    background-color: #F2F2F2; /* Cambia el color de fondo según tus necesidades */
+    border-radius: 15px;
+    border: solid 1px #CECECE;
+}
+.bloque .contenido {
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+}
+
+.bloque img {
+    height: 220px;
+    width: 306px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.titulo {
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Graphik', sans-serif;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.descripcion{
+    margin-left: 8px;
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
